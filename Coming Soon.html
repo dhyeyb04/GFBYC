@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Good Food Brampton Youth Council</title>
+<link href="clogo.png" rel="shortcut icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+	body,h1 {font-family: "Raleway", sans-serif}
+	body, html {height: 100%}
+	.bgimg {
+    	background-image: url('foodback.jpg');
+    	min-height: 100%;
+    	background-position: center;
+    	background-size: cover;
+	}
+</style>
+
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div style="font-size: 65px; padding-top: 65px; text-align: center">
+    Good Food Brampton Youth Council
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-animate-top" style="font-size: 40px">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+	  <p id="time" class="w3-large w3-center"></p>
+	  <script>
+		  // Set the date we're counting down to
+		  var countDownDate = new Date("Jul 1, 2017").getTime();
+
+		  // Update the count down every 1 second
+		  var x = setInterval(function() {
+
+ 			// Get todays date and time
+  			var now = new Date().getTime();
+
+			// Find the distance between now an the count down date
+  			var distance = countDownDate - now;
+
+  			// Time calculations for days, hours, minutes and seconds
+  			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  
+  		// Display the result in the element with id="demo"
+  		document.getElementById("time").innerHTML = days + " days left"
+
+  		// If the count down is finished, write some text 
+  		if (distance < 0) {
+    		clearInterval(x);
+    		document.getElementById("time").innerHTML = "EXPIRED";
+  		}
+		}, 1000);
+	  </script>
+	  
+	  
+  </div>
+	<div style="position:fixed; width:100%; height:70px; text-align: center; padding:5px; bottom:0px" ><a href="https://www.facebook.com/GoodFoodBramptonYouthCouncil/" class="fb"><img src='facebook.png' alt="Facebook" height="50" width="50" ></a></div>
+	<div style="position:fixed; width:100%; height:70px; text-align: right; padding:25px; bottom:0px; font-size: 18px">Good Food Brampton © </div>
+</div>
+	<!--<p>Good Food Brampton©</p>-->
+	
+</body>
+</html>
